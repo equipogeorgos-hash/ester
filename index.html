@@ -5,42 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FELIZ CUMPLEAÑOS ESTER</title>
     <style>
-        body {
-            text-align: center;
-            padding: 50px;
+        html, body {
+            margin: 0;
+            padding: 0;
             background-color: #f0e68c;
+            text-align: center;
+            font-family: sans-serif;
         }
+
+        h5 {
+            font-size: 80px;
+            color: #8b0000;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+            margin-bottom: 30px;
+        }
+
         h1 {
             font-size: 60px;
             color: #8b4513;
             text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
         }
+
         img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.2s;
-}
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
 
         img:hover {
             transform: scale(1.05);
         }
+
         img:active {
             transform: scale(0.95);
         }
     </style>
 </head>
 <body>
-        <h5>  FELIZ cumpleaños ESTER    </h5>
-
-    <h1>   ESTER PULSA LA FOTO    </h1>
+    <h5>FELIZ cumpleaños ESTER</h5>
+    <h1>ESTER PULSA LA FOTO</h1>
     <img src="https://raw.githubusercontent.com/equipogeorgos-hash/ester/main/foto.jpg" 
          alt="Gallina" 
          onclick="document.getElementById('sonido').play()">
-    
     <audio id="sonido" src="https://raw.githubusercontent.com/equipogeorgos-hash/ester/main/cumpleaños.mp3"></audio>
 </body>
 </html>
